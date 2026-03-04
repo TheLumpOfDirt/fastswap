@@ -1,0 +1,104 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "debian",
+    "padding": {
+      "left": 2,
+      "right": 3,
+      "top": 1
+    }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌─ System ───────────────────────────────────────────────────┐"
+    },
+    {
+      "type": "os",
+      "key": " ┌  OS       ",
+      "format": "{pretty-name}"
+    },
+    {
+      "type": "kernel",
+      "key": " ├ 󰌽 Kernel   ",
+      "format": "{release}"
+    },
+    {
+      "type": "uptime",
+      "key": " ├ 󱎫 Uptime   "
+    },
+    {
+      "type": "packages",
+      "key": " ├  Pkgs     "
+    },
+    {
+      "type": "shell",
+      "key": " └ 󰆍 Shell    "
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌─ Hardware ─────────────────────────────────────────────────┐"
+    },
+    {
+      "type": "cpu",
+      "key": " ┌  CPU      ",
+      "format": "{name}"
+    },
+    {
+      "type": "gpu",
+      "key": " ├  GPU      ",
+      "format": "{name}"
+    },
+    {
+      "type": "memory",
+      "key": " ├  RAM      ",
+      "format": "{used}/{total} ({percentage})"
+    },
+    {
+      "type": "swap",
+      "key": " ├  Swap     ",
+      "format": "{used}/{total} ({percentage})"
+    },
+    {
+      "type": "disk",
+      "key": " ├  /        ",
+      "folders": "/",
+      "format": "{size-used}/{size-total} ({size-percentage})"
+    },
+    {
+      "type": "disk",
+      "key": " └  /home    ",
+      "folders": "/home",
+      "format": "{size-used}/{size-total} ({size-percentage})"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[90m┌─ Session ──────────────────────────────────────────────────┐"
+    },
+    {
+      "type": "title",
+      "key": " ┌  Host     ",
+      "format": "{user-name}@{host-name}"
+    },
+    {
+      "type": "localip",
+      "key": " ├ 󰌘 IPv4     ",
+      "format": "{ipv4}"
+    },
+    {
+      "type": "locale",
+      "key": " ├ 󰊷 Locale   "
+    },
+    {
+      "type": "command",
+      "key": " ├  Time     ",
+      "text": "date '+%Y-%m-%d %H:%M:%S %Z'"
+    },
+    {
+      "type": "terminal",
+      "key": " └ 󰆍 Terminal "
+    },
+    "break",
+    "colors"
+  ]
+}
