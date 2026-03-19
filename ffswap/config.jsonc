@@ -1,7 +1,7 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-    "source": "$HOME/.config/fastfetch/miyddneezu671.png",
+    "source": "$HOME/.config/fastfetch/stmhouri.png",
     "height": 22,
     "padding": {
       "left": 4,
@@ -11,41 +11,41 @@
   },
   "modules": [
     {
-      "type": "custom",
+      "type": "title",
       "format": "\u001b[90m┌───────────────── {user-name}@{host-name} ─────────────────┐"
     },
     {
       "type": "title",
       "key": " ┌  F-word ",
-      "keyColor": "#f0a4cc",
+      "keyColor": "#313763",
       "format": "yes"
     },
     {
       "type": "localip",
       "key": " ├ 󰌘 Ipv4   ",
-      "keyColor": "#f0a4cc",
+      "keyColor": "#313763",
       "format": "{ipv4}"
     },
     {
       "type": "command",
       "key": " ├  Time   ",
       "text": "date +\"%H:%M (%Z)\"",
-      "keyColor": "#f0a4cc"
+      "keyColor": "#313763"
     },
     {
       "type": "locale",
       "key": " ├ 󰊷 locale ",
-      "keyColor": "#f0a4cc"
+      "keyColor": "#313763"
     },
     {
       "type": "uptime",
       "key": " ├ 󱎫 Uptime ",
-      "keyColor": "#f0a4cc"
+      "keyColor": "#313763"
     },
     {
       "type": "command",
       "key": " └ 󱎫 OS Age ",
-      "keyColor": "#f0a4cc",
+      "keyColor": "#313763",
       "text": "birth_install=$(stat -c %W / 2>/dev/null); [ \"$birth_install\" -le 0 ] && birth_install=$(stat -c %Y /); current=$(date +%s); echo $(((current - birth_install)/86400)) days"
     },
     {
@@ -56,30 +56,30 @@
       "type": "cpu",
       "key": " ┌  CPU     ",
       "format": "{name}",
-      "keyColor": "#f0c5c1"
+      "keyColor": "#e3cbd3"
     },
     {
       "type": "gpu",
       "key": " ├  GPU     ",
       "format": "{name}",
-      "keyColor": "#f0c5c1"
+      "keyColor": "#e3cbd3"
     },
     {
       "type": "memory",
       "key": " ├  RAM     ",
       "format": "{used}/{total}",
-      "keyColor": "#f0c5c1"
+      "keyColor": "#e3cbd3"
     },
     {
       "type": "disk",
       "key": " ├  Disk    ",
       "format": "{mount-from} {filesystem} - {size-used}/{size-total}",
-      "keyColor": "#f0c5c1"
+      "keyColor": "#e3cbd3"
     },
     {
       "type": "display",
       "key": " └ 󰍹 Display ",
-      "keyColor": "#f0c5c1",
+      "keyColor": "#e3cbd3",
       "format": "{name} - {width}x{height} @ {refresh-rate}Hz"
     },
     {
@@ -89,34 +89,34 @@
     {
       "type": "os",
       "key": " ┌ 󰌽 OS       ",
-      "keyColor": "#f7f7f7",
+      "keyColor": "#ee224d",
       "format": "{pretty-name} {arch}"
     },
     {
       "type": "kernel",
       "key": " ├ 󰌽 Kernel   ",
-      "keyColor": "#f7f7f7",
+      "keyColor": "#ee224d",
       "format": "{release}"
     },
     {
       "type": "de",
       "key": " ├  DE       ",
-      "keyColor": "#f7f7f7"
+      "keyColor": "#ee224d"
     },
     {
       "type": "wm",
       "key": " ├  WM       ",
-      "keyColor": "#f7f7f7"
+      "keyColor": "#ee224d"
     },
     {
       "type": "shell",
       "key": " ├ 󰆍 Shell    ",
-      "keyColor": "#f7f7f7"
+      "keyColor": "#ee224d"
     },
     {
       "type": "terminal",
       "key": " └ 󰆍 Terminal ",
-      "keyColor": "#f7f7f7"
+      "keyColor": "#ee224d"
     },
     "break",
     "colors"

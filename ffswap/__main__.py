@@ -38,7 +38,7 @@ def apply_category_colors(modules: List[Any], colors: List[str]) -> None:
         return
 
     # Find indices of separator modules (type == "custom")
-    sep_indices = [i for i, m in enumerate(modules) if isinstance(m, dict) and m.get("type") == "custom"]
+    sep_indices = [i for i, m in enumerate(modules) if isinstance(m, dict) and (m.get("type") == "custom" or (m.get("type") == "title" and (m.get("key") != " ┌  F-word ")))]
 
     # If there are no separators, treat the whole modules list as a single category
     if not sep_indices:
