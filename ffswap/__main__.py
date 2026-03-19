@@ -7,8 +7,8 @@ from typing import List, Dict, Any
 
 # List of anime girl images (objects with source and colors)
 ANIME_GIRLS = [
-    {"source": "image0.png", "colors": ["#cb7a6b", "#eeeeee", "#cb7a6b"]},
-    {"source": "image1.png", "colors": ["#ccc3ff", "#eeeeee", "#ccc3ff"]}
+    {"source": "miyddneezu671.png", "colors": ["#f0a4cc", "#f0c5c1", "#f7f7f7"]},
+    {"source": "stmhouri.png", "colors": ["#313763", "#e3cbd3", "#ee224d"]}
 ]
 
 def swap_filename(src: str) -> str:
@@ -61,7 +61,7 @@ def apply_category_colors(modules: List[Any], colors: List[str]) -> None:
                 mod["keyColor"] = color
 
 def main():
-    cfg = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("config.jsonc")
+    cfg = Path("./ffswap/config.jsonc")
     if not cfg.exists():
         print(f"Config file not found: {cfg}", file=sys.stderr)
         sys.exit(1)
